@@ -15,7 +15,10 @@ function Nav() {
           <NavLink classname="nav-link" to="/Home" activeclassname = "active">Home</NavLink>
         </li>
         <li class="nav-item">
-          <NavLink classname="nav-link" to="/Portfolio" activeclassname = "active">Portfolio</NavLink>
+          <NavLink classname="nav-link" to="/AboutUs" activeclassname = "active">About Us</NavLink>
+        </li>
+        <li class="nav-item">
+          <NavLink classname="nav-link" to="/Organisation" activeclassname = "active">Organisation</NavLink>
         </li>
         <li class="nav-item">
           <NavLink classname="nav-link" to="/login" activeclassname = "active">Login</NavLink>

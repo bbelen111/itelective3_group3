@@ -1,10 +1,10 @@
 import './App.css';
 import Nav from './Nav';
 import Home from './pages/Home';
-import Portfolio from './pages/Portfolio';
 import { BrowserRouter as Router, Route, Routes, Navigate, Outlet } from 'react-router-dom';
 import Login from "./pages/login";
-import Calculator from "./pages/Calculator";
+import AboutUs from "./pages/AboutUs";
+import Organisation from "./pages/Organisation";
 
 const NavBarLayout = () => (
   <>
@@ -19,9 +19,9 @@ function App() {
       <Routes>
         <Route element = {<NavBarLayout />}>
           <Route exact path="/Home" element={<Home />} />
-          <Route exact path="/Portfolio" element={<Portfolio />} />
+          <Route exact path="/AboutUs" element={<AboutUs />} />
+          <Route exact path="/Organisation" element={<Organisation />} />
           <Route exact path="/Login" element={<Login />} />
-          <Route exact path="/Calculator" element={<Calculator />} />
         </Route>
       </Routes>
     </Router>
