@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 function Login() {
     const navigate = useNavigate();
     const proceedLogin = () => {
-        navigate('/login');
+        navigate('/Login');
     };
 
     const [username, setUsername] = useState('');

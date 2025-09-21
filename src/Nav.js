@@ -21,7 +21,7 @@ function Nav() {
           <NavLink classname="nav-link" to="/Organisation" activeclassname = "active">Organisation</NavLink>
         </li>
         <li class="nav-item">
-          <NavLink classname="nav-link" to="/login" activeclassname = "active">Login</NavLink>
+          <NavLink classname="nav-link" to="/Login" activeclassname = "active">Login</NavLink>
         </li>
         
       </ul>
