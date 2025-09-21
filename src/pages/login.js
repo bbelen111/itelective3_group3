@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from "react-router-dom";
 
 function Login() {
-    const navigate = useNavigate();
-    const proceedLogin = () => {
-        navigate('/Login');
-    };
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
