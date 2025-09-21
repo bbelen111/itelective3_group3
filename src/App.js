@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes, Outlet } from 'react-router-dom
 import Login from "./pages/Login";
 import AboutUs from "./pages/AboutUs";
 import Organisation from "./pages/Organisation";
+import { AuthProvider } from './AuthContext';
 
 const NavBarLayout = () => (
   <>
@@ -15,16 +16,20 @@ const NavBarLayout = () => (
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route element = {<NavBarLayout />}>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/AboutUs" element={<AboutUs />} />
-          <Route exact path="/Organisation" element={<Organisation />} />
+    <AuthProvider>
+      <Router>
+        <Routes>
+          {/* Pages without navbar */}
           <Route exact path="/Login" element={<Login />} />
-        </Route>
-      </Routes>
-    </Router>
+          {/* Pages with navbar */}
+          <Route element={<NavBarLayout />}>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/AboutUs" element={<AboutUs />} />
+            <Route exact path="/Organisation" element={<Organisation />} />
+          </Route>
+        </Routes>
+      </Router>
+    </AuthProvider>
   );
 }
 

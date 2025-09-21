@@ -1,0 +1,22 @@
+/* Global styles */
+body, #root {
+  min-height: 100vh;
+  background: #f5f7fa;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Utility */
+.gap-3 { gap: 1rem; }
+
+/* When a selected user (Bucky, Ava, John) is logged in, force all nav links to black */
+.navbar.dark-text .nav-link {
+  color: #000 !important;
+}
+.navbar.dark-text .nav-link:hover,
+.navbar.dark-text .nav-link:focus,
+.navbar.dark-text .nav-link.active {
+  color: #000 !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
